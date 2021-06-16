@@ -1,10 +1,8 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Resources\UserCollection;
-use App\Http\Resources\UserResource;
-use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,14 +16,21 @@ use App\Models\User;
 */
 
 
-Route::get('/', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/', [HomeController::class, 'index'])
+    ->name('dashboard');
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+Route::get('/feedback', [FeedbackController::class, 'index'])
+    ->name('feedback');
+Route::post('/feedback', [FeedbackController::class, 'store'])
+    ->name('feedback');
+
+Route::get('/atsiliepimai', [FeedbackController::class, 'list'])
+    ->name('fb_list');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-
+    // For authenticated pages
 });
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+
+// })->name('dashboard');

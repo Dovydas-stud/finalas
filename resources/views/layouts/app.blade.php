@@ -11,17 +11,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        {{-- <link rel="stylesheet" href="{{ mix('css/app.css') }}"> --}}
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         @livewireStyles
 
         <!-- Scripts -->
-        {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
-        <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />

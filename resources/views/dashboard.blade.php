@@ -1,9 +1,9 @@
 <x-app-layout>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="bg-red-50 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="px-6 py-4">
-                    <h2 class="text-xl">Paslaugos</h2>
+                    <h2 class="text-xl m-5" style="font-size: 200%">Paslaugos</h2>
                     <p class="text-lg ml-2 my-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui velit voluptate consequuntur vel similique est iure recusandae nisi, voluptates quidem soluta officia, minus non.
                     </p>
@@ -57,7 +57,7 @@
                             </a>
                         </div>
                         <div class="w-1/4 mr-2">
-                            <div class="flex flex-col max-w-md bg-white shadow-lg overflow-hidden">
+                            <div class="flex flex-col max-w-md overflow-hidden">
                                 <div class="w-full bg-cover" style="background-image: url('{{ asset('img/plane.jpeg') }}'); height: 115px"></div>
                                 <div class="w-full p-4">
                                     <h1 class="text-gray-900 font-bold text-2xl">Skrydžiai</h1>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="w-1/4">
-                            <div class="flex flex-col max-w-md bg-white shadow-lg overflow-hidden">
+                            <div class="flex flex-col max-w-md overflow-hidden">
                                 <div class="w-full bg-cover" style="background-image: url('{{ asset('img/car.jpeg') }}'); height: 115px"></div>
                                 <div class="w-full p-4">
                                     <h1 class="text-gray-900 font-bold text-2xl">Automobilių nuoma</h1>
@@ -91,11 +91,47 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-red-50 overflow-hidden sm:rounded-lg">
                 <div class="flex flex-row justify-center my-5">
-                    <div>
-                        <i class="fas fa-bicycle"></i>
+                    <div class="flex flex-col justify-center items-center mx-5">
+                        <img src="{{ asset('img/svg/bike.svg') }}" class="mb-5" style="width: 40px">
+                        <p class="mb-5">
+                            Dviračių nuoma
+                        </p>
+                        <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+                            {{__('Ieškoti')}}
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mx-5">
+                        <img src="{{ asset('img/svg/car.svg') }}" class="mb-5" style="width: 40px">
+                        <p class="mb-5">
+                            Automobilių nuoma
+                        </p>
+                        <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+                            {{__('Ieškoti')}}
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mx-5">
+                        <img src="{{ asset('img/svg/plane.svg') }}" class="mb-5" style="width: 40px">
+                        <p class="mb-5">
+                            Lėktuvų bilietai
+                        </p>
+                        <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+                            {{__('Ieškoti')}}
+                        </a>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mx-5">
+                        <img src="{{ asset('img/svg/taxi.svg') }}" class="mb-5" style="width: 40px">
+                        <p class="mb-5">
+                            Kelionės autobusu
+                        </p>
+                        <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+                            {{__('Ieškoti')}}
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-gray-700">
+            &copy; 2017-2020 - Dovydas Dargis, 13 Grupė.
         </div>
     </div>
 </x-app-layout>

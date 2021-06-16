@@ -29,7 +29,7 @@ class FeedbackController extends Controller
 
         Feedback::create($data);
 
-        return redirect()->route('dashboard')->with("fb_success", "Ačiu už atsiliepima!");
+        return redirect()->route('dashboard', ["fb_success" => "Ačiu už atsiliepima!"]);
     }
 
     public function list()

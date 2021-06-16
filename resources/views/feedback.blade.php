@@ -64,9 +64,10 @@
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="opinion">
                     Jūsų nuomonė apie mus:
                 </label>
-                <textarea col="" row="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="opinion" id="opinion">
-
-                </textarea>
+                <textarea col="" row="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="opinion" id="opinion"></textarea>
+                <p class="text-sm text-gray-700 m-2">
+                    * - pažymėtus laukus privaloma užpildyti
+                </p>
 
                 <div class="flex items-center justify-between">
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
